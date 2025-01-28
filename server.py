@@ -1,7 +1,7 @@
 import socket
 
 server = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
-server.bind(("<MAC_ADDR", 4))
+server.bind(("90:65:84:6B:A9:53", 4))
 server.listen(1)
 
 client, addr = server.accept()
